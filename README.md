@@ -3,7 +3,7 @@
 Currently trying to find the time to finish this
 
 ## Purpose
-Anet charges money (in USD, so will also incur conversion fees too) to add a single tab of either Equipment or Build Template for a toon.
+Anet charges money (in USD, so will incur conversion fees too) to add a single tab of either Equipment or Build Template for a toon.
 
 The equipment and builds can be exported and imported with a code.
 
