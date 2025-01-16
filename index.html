@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guild Wars 2 Build Manager</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Guild Wars 2 Build Manager</h1>
+        <div class="container">
+            <form id="build-form">
+                <label for="profession">Profession:</label>
+                <select id="profession" required>
+                    <option value="" disabled selected>Select Profession</option>
+                    <option value="Mesmer">Mesmer</option>
+                    <option value="Warrior">Warrior</option>
+                    <option value="Guardian">Guardian</option>
+                    <option value="Necromancer">Necromancer</option>
+                    <option value="Ranger">Ranger</option>
+                    <option value="Elementalist">Elementalist</option>
+                    <option value="Thief">Thief</option>
+                    <option value="Engineer">Engineer</option>
+                    <option value="Revenant">Revenant</option>
+                </select>
+
+                <label for="category">Category:</label>
+                <select id="category" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="PvE">PvE</option>
+                    <option value="PvP">PvP</option>
+                    <option value="WvW">WvW</option>
+                </select>
+
+                <label for="entry-name">Entry Name:</label>
+                <input type="text" id="entry-name" placeholder="e.g., Entry 1" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" rows="5" placeholder="Add a description..."></textarea>
+
+                <label for="equipment-code">Equipment Code:</label>
+                <input type="text" id="equipment-code" placeholder="Enter Equipment Code" required>
+
+                <label for="build-code">Build Template Code:</label>
+                <input type="text" id="build-code" placeholder="Enter Build Template Code" required>
+
+                <button type="submit">Add Build</button>
+            </form>
+
+            <div id="builds-container">
+                <!-- builds by profession will be rendered here -->
+            </div>
+
+            <button onclick="saveBuilds()">Save Builds</button>
+            <button onclick="document.getElementById('load-file').click()">Load Builds</button>
+            <input type="file" id="load-file" style="display: none;" accept=".json" onchange="loadBuilds(event)">
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

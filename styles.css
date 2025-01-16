@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    /* max-width: 900px; */
+    min-width: 950px;
+    max-width: 1080px;
+    width: auto;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, button, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+.profession {
+    margin-top: 20px;
+}
+
+.category {
+    margin-left: 20px;
+    border-left: 3px solid #ccc;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.entry {
+    margin-left: 20px;
+    border-left: 3px solid #ddd;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.sub-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.sub-row span {
+    flex: 1;
+}
+
+.sub-row button {
+    margin-left: 10px;
+}
